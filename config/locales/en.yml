@@ -1,0 +1,53 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "E-mail"
+        password: "Password"  
+  sign_in:
+    sign_in: 'Sign In'   
+    remember_me: "Remember me"   
+    sign_up: "Sign up" 
+    forgot_your_password: "Forgot your password?"
+    confirmation_instructions: "Didn't receive confirmation instructions?"
+    no_unlock_instructions: "Didn't receive unlock instructions?"
+    sign_in_with: "Sign in with"
+    send_me_reset_password: "Send me reset password instructions"
+    resend_confirmation: "Resend confirmation instructions"
+    change_password: "Change your password"
+    new_password: "New password"
+    confirm_new_password: "Confirm your new password"
+  views:
+    edit: "Edit"
+    show: "Show"
+  devise:
+    registrations:
+      edit:
+        password_instruction: "Leave it blank if you don't want to change it"
+        current_password_instruction: "We need your current password to confirm your changes"
+        edit: "Atualizar"
+        cancel_my_account: "Cancel my Account"
+        back: "Back"
+        update: "Update"

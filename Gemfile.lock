@@ -85,6 +85,8 @@ GEM
     eventmachine (1.2.0.1)
     execjs (2.7.0)
     ffi (1.9.14)
+    font-awesome-rails (4.7.0.0)
+      railties (>= 3.2, < 5.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -211,6 +213,7 @@ DEPENDENCIES
   delayed_job_active_record
   devise (= 4.2.0)
   devise_invitable
+  font-awesome-rails
   i18n
   jbuilder (= 2.6.0)
   jquery-datatables-rails!
@@ -236,4 +239,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.5
+   1.13.0

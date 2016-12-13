@@ -22,7 +22,12 @@
    	 <%= javascript_include_tag "user"  %>
 
    	<script type="text/javascript">
-      $('.carousel').carousel();
+    $(document).ready(function(){
+      $('#myCarousel').carousel({
+        interval: 3000,
+        cycle: true
+      }); 
+       }); 
 
     </script>
    </body>

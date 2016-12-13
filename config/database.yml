@@ -2,7 +2,7 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: fipe_development
+  database: blog_development
   pool:     5
   username: postgres
   password: postgres
@@ -30,7 +30,7 @@ test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: fipe_test
+  database: blog_test
   pool:     5
   username: postgres
   password: postgres
@@ -40,7 +40,7 @@ production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: fipe_production
+  database: blog_production
   pool:     5
   username: 
   password:

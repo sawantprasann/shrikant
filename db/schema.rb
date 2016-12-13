@@ -15,53 +15,6 @@ ActiveRecord::Schema.define(version: 20161210103049) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "delayed_jobs", force: :cascade do |t|
-    t.integer  "priority",   default: 0, null: false
-    t.integer  "attempts",   default: 0, null: false
-    t.text     "handler",                null: false
-    t.text     "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string   "locked_by"
-    t.string   "queue"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
-  end
-
-  create_table "manufacturers", force: :cascade do |t|
-    t.string   "name"
-    t.string   "id_manufacturer"
-    t.string   "key"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
-  create_table "models", force: :cascade do |t|
-    t.string   "name"
-    t.string   "id_model"
-    t.string   "key"
-    t.integer  "manufacturer_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
-  create_table "releases", force: :cascade do |t|
-    t.string   "name"
-    t.string   "id_release"
-    t.string   "key"
-    t.integer  "model_id"
-    t.string   "fipe_codigo"
-    t.string   "fipe_codigo2"
-    t.string   "combustivel"
-    t.string   "ano_modelo"
-    t.string   "preco"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.string   "referencia"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false

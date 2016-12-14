@@ -4,4 +4,5 @@
 //= require 'js/bootstrap.min.js'
 //= require 'js/cleanzone.js' 
 //= require 'js/jquery.nanoscroller.js'
+//= require ckeditor/init
 */

@@ -22,6 +22,9 @@ gem 'jquery-ui-rails'
 gem 'i18n'
 gem 'delayed_job_active_record'
 gem "font-awesome-rails"
+gem 'ckeditor', '4.1.3'
+gem 'paperclip'
+gem 'friendly_id', '~> 5.1.0'
 group :development, :test do
   gem 'byebug', platform: :mri  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 end

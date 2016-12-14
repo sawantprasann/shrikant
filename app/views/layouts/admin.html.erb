@@ -16,8 +16,14 @@
    </head>
    <body>
    	<%= render '/shared/header'%>
-   	<%= render '/shared/side'%>
-   	 <%= yield %>
+       <div id="cl-wrapper">
+   	     <%= render '/shared/side'%>
+           <div id="pcont" class="container-fluid">
+            <div class="cl-mcont">
+   	     <%= yield %>
+            </div>
+         </div>
+      </div>
    	 <%= javascript_include_tag "admin"  %>
 
    	 <script type="text/javascript">$(document).ready(function(){

@@ -3,5 +3,6 @@
 * require 'css/font-awesome.min.css'
 *= require 'css/nanoscroller.css'
 *= require font-awesome
+*= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 *= require 'css/style.css'
 */

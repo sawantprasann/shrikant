@@ -9,7 +9,7 @@ class UsersDatatable < BaseDatatable
     	user.first_name,
     	user.last_name,
     	user.email,
-    	link_to(I18n.t("views.show"), user)
+    	link_to("Show","/admin/posts/#{user.id}")
       ]
     end
   end

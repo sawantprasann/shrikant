@@ -4,5 +4,6 @@
 *= require 'css/nanoscroller.css'
 *= require font-awesome
 *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+ *= require dataTables/extras/dataTables.responsive
 *= require 'css/style.css'
 */

@@ -5,4 +5,5 @@
 //= require 'js/jqBootstrapValidation.js'
 //= require 'js/contact_me.js' 
 //= require 'js/clean-blog.min.js'
+//= require ckeditor/init
 */

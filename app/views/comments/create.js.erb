@@ -1,0 +1,7 @@
+<% if current_user%>
+	$("#comments-list").prepend('<div id="comment_<%= @comment.id%>">');$('#comment_content').val('');
+	$("#comment_<%= @comment.id%>").prepend("<%= escape_javascript(render partial: 'comment', locals: { comment: @comment }) %>").hide().fadeIn('slow');
+<%else%>
+	alert("Please login");
+	window.location.href = '/login?redirect_to=/posts/<%= @post.id%>'
+<%end%>

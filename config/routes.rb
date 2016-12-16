@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   
   mount Ckeditor::Engine => '/ckeditor'
-  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register', edit: 'settings' } 
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register', edit: 'settings' }, controllers: {sessions: 'sessions'} 
   namespace :admin do
     root to: 'dashboard#index'
     resources :posts
     resources :users
+    resources :comments
   end
   resources :users
   resources :comments

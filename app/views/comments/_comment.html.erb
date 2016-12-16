@@ -1,0 +1,20 @@
+<li>
+				<div class="comment-main-level">
+					<!-- Avatar -->
+					<div class="comment-avatar"><img src="/img/user.jpg" alt=""></div>
+					<!-- Contenedor del Comentario -->
+					<div class="comment-box">
+						<div class="comment-head">
+							<h6 class="comment-name"><a href="javascript:void(0)"><%= comment.user.name%></a></h6>
+							<span><%= time_ago_in_words(comment.created_at)%></span>
+							<!-- i class="fa fa-reply"></i>
+							<i class="fa fa-heart"></i> -->
+						</div>
+						<div class="comment-content">
+							<%= comment.content.html_safe%>
+						</div>
+					</div>
+				</div>
+				<!-- Respuestas de los comentarios -->
+				
+			</li>

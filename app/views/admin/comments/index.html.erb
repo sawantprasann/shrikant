@@ -1,0 +1,43 @@
+
+<div class="page-head">
+  <ol class="breadcrumb">
+    <li><a href="/admin">Home</a></li>
+    <li class="active">Comments</li>
+   </ol>
+</div>
+<p id="notice"><%= notice %></p>
+
+
+
+
+<div class="row">
+                  <div class="col-md-12">
+                     <div class="block-flat">
+                        <div class="header">
+                           <h3>Posts</h3>
+                        </div>
+                        <div class="content">
+                           <div>
+                              <table id="posts-datatable" class="table table-bordered" data-source="<%= admin_comments_url(format: "json")%>">
+                                 <thead>
+                                    <tr>
+                                       <th>id</th>
+                                       <th>User</th>
+                                       <th>Comment</th>                      
+                                       <th>Action</th>
+                                       <th></th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    
+                                    
+                                    
+                                    
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>

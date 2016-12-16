@@ -4,7 +4,7 @@ class  Admin::PostsController < AdminController
   # GET /admin/posts
   # GET /admin/posts.json
   def index
-    @admin_posts = Post.all
+    #@admin_posts = Post.all
     respond_to do |format|
       format.html
       format.json { render json: PostsDatatable.new(view_context,{"class_name" => "Post"}) }

@@ -10,7 +10,7 @@
      
       
        <%= stylesheet_link_tag  "user" %>
-       
+
        <%= csrf_meta_tags %>
    </head>
    <body>
@@ -21,13 +21,7 @@
    	 <%= javascript_include_tag "user"  %>
 
    	<script type="text/javascript">
-    $(document).ready(function(){
-      $('#myCarousel').carousel({
-        interval: 3000,
-        cycle: true
-      }); 
-       }); 
-
+   
     </script>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -83,6 +77,14 @@ $('.thumbnail').click(function(){
   
 })(jQuery); 
 
+
+$(document).ready(function() {  
+  $( ".widget h2" ).click(
+    function() {
+      $(this).parent().toggleClass('active');
+    }
+  );      
+});
 </script>
 
    </body>

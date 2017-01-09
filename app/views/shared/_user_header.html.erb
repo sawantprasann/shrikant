@@ -7,21 +7,29 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/">Blog</a>
+                <a class="navbar-brand" href="/">प्रा. श्रीकांत आण्णासाहेब चौधरी</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">मुख्यपान</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a href="/about">परीचय</a>
+                    </li>
+
+                    <li>
+                        <a href="/gallery">फोटो</a>
+                    </li>
+
+                    <li>
+                        <a href="/posts">ब्लॉग</a>
                     </li>
                     
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/contact">संपर्क</a>
                     </li>
                     <% if current_user%>
                     <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
@@ -34,5 +42,60 @@
         </div>
         <!-- /.container -->
     </nav>
-
+<% if !defined? @post%>
+<div id="first-slider">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- Item 1 -->
+            <div class="item active slide1">
+                <div class="row">
+                  <div class="container">
+                      
+                      <div class="col-md-7 text-left">
+                          <h3 data-animation="animated bounceInDown">नमस्कार मी प्रा. श्रीकांत आण्णासाहेब चौधरी</h3>
+                                    
+                       </div>
+                  </div>
+                </div>
+             </div> 
+            <!-- Item 2 -->
+            <div class="item slide2">
+                <div class="row"><div class="container">
+                    <div class="col-md-7 text-left">
+                        <h3 data-animation="animated bounceInDown"> नमस्कार मी प्रा. श्रीकांत आण्णासाहेब चौधरी</h3>
+                        
+                     </div>
+                    
+                </div></div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item slide3">
+                <div class="row"><div class="container">
+                    <div class="col-md-7 text-left">
+                        <h3 data-animation="animated bounceInDown">नमस्कार मी प्रा. श्रीकांत आण्णासाहेब चौधरी</h3>
+                        
+                     </div>
+                    
+                </div></div>
+            </div>
+           
+        </div>
+        <!-- End Wrapper for slides-->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<%end%>
     

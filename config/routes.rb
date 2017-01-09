@@ -22,6 +22,7 @@ Rails.application.routes.draw do
     get '/post', to: 'home#post', as: 'secret'
     get '/about', to: 'home#about', as: 'about'
     get '/contact', to: 'home#contact', as: 'contact'
+    get '/gallery', to: 'home#gallery'
   
     # resources :lead_profiles do 
     #   get "upload_excel"
